@@ -326,7 +326,7 @@ body in-transition {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 60%;
   margin: 0 25%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -378,7 +378,6 @@ body in-transition {
 
 .portfolio {
   width: 98.5vw;
-  height: 100vh;
   padding-top: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -427,7 +426,7 @@ body in-transition {
   font-weight: normal;
   text-decoration: none;
   text-align: center;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .portfolio__menu__link__activo {
@@ -559,7 +558,13 @@ body in-transition {
   letter-spacing: 5px;
 }
 
+.contact__formulario {
+  width: 100%;
+}
+
 .contact__formulario form {
+  width: 40%;
+  margin: 0 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,6 +577,7 @@ body in-transition {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 500px;
 }
 
 .contact__formulario form label {
@@ -584,8 +590,9 @@ body in-transition {
           flex-direction: column;
   color: #353535;
   font-weight: bold;
-  width: 20%;
+  width: 25%;
   margin: 10px;
+  width: 100%;
 }
 
 .contact__formulario form label input {
@@ -604,7 +611,15 @@ body in-transition {
   height: 100px;
 }
 
-.contact__formulario form__botones {
+.contact__footer h1 {
+  font-weight: bold;
+  color: #353535;
+  font-size: .8em;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.contact__formulario__botones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,18 +627,22 @@ body in-transition {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 30px;
 }
 
-.contact__formulario form__botones button {
-  padding: 50px 20px;
-  border: none;
+.contact__formulario__botones button {
+  padding: 10px 50px;
+  border: solid 1px #353535;
   color: #353535;
   font-weight: bold;
+  border-radius: 50px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin: 0 30px;
 }
 
-.contact__formulario form__botones :hover {
+.contact__formulario__botones :hover {
   background: #353535;
-  border-radius: 50px;
   color: #EFEFEF;
 }
 
@@ -666,12 +685,11 @@ body in-transition {
   .home__about__text__nombre, .home__about__text__apellido {
     letter-spacing: 15px;
   }
-  .kills__skills {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .skills__skills {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .kills__skills__skill {
+  .skills__skills__skill {
     width: 160px;
     margin-bottom: 60px;
   }
@@ -687,6 +705,16 @@ body in-transition {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .contact__formulario {
+    width: 100%;
+  }
+  .contact__formulario form {
+    width: 40%;
+    margin: 0 30%;
+  }
+  .contact__formulario form label {
+    width: 100%;
   }
 }
 
@@ -751,6 +779,30 @@ body in-transition {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .contact__formulario {
+    width: 100%;
+  }
+  .contact__formulario form {
+    width: 60%;
+    margin: 0 20%;
+  }
+  .contact__formulario form label {
+    width: 100%;
+  }
+  .contact__formulario__botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+  .contact__formulario__botones button {
+    padding: 10px 30px;
+    margin: 0 20px;
   }
 }
 
@@ -832,6 +884,36 @@ body in-transition {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 66%;
+    margin: 0 15%;
+  }
+  .portfolio__projects__proyecto {
+    width: 120px;
+    margin-bottom: 60px;
+  }
+  .contact__formulario {
+    width: 100%;
+  }
+  .contact__formulario form {
+    width: 80%;
+    margin: 0 10%;
+  }
+  .contact__formulario form label {
+    width: 100%;
+  }
+  .contact__formulario__botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+  .contact__formulario__botones button {
+    padding: 10px 30px;
+    margin: 0 20px;
   }
 }
 
@@ -913,6 +995,35 @@ body in-transition {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 80%;
+    margin: 0 10%;
+  }
+  .portfolio__projects__proyecto {
+    width: 150px;
+  }
+  .contact__formulario {
+    width: 100%;
+  }
+  .contact__formulario form {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .contact__formulario form label {
+    width: 100%;
+  }
+  .contact__formulario__botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+  .contact__formulario__botones button {
+    padding: 10px 50px;
+    margin: 0 20px;
   }
 }
 /*# sourceMappingURL=index.css.map */
