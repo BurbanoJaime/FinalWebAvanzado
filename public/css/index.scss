@@ -32,7 +32,7 @@ body {
     &__redes {
         transform: rotate(-90deg);
         position: fixed;
-        left: -380px;
+        left: -62vw;
         top: 50%;
         width: 100vh;
         display: flex;
@@ -41,6 +41,7 @@ body {
         justify-content: space-around;
         align-content: flex-start;
         align-items: center;
+        display: none;
 
         a {
             text-decoration: none;
@@ -162,6 +163,101 @@ body {
             }
         }
     }
+
+    &__menuRes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        transform: translateX(-100vw);
+        display: none;
+
+        &__titulo {
+            position: absolute;
+            top: 200px;
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+
+        &__link {
+            color: $colorPrincipal;
+            font-weight: bold;
+            opacity: 1;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 50px;
+            transition: all .4s;
+        }
+
+        &__link:hover {
+            background: $colorPrincipal;
+            color: $colorSecundario;
+        }
+
+        &__logo {
+            position: absolute;
+            bottom: 20px;
+
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+
+            img {
+                width: 30%;
+                fill: $colorSecundario;
+                background-color: $colorSecundario;
+                margin-bottom: 15px;
+            }
+
+            h1 {
+                font-size: 1em;
+                color: $colorPrincipal;
+            }
+        }
+    }
+
+    &__hamburguesa {
+        position: absolute;
+        top: 40px;
+        left: 50px;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        box-sizing: border-box;
+        background: $colorPrincipal;
+        border: solid 1px $colorPrincipal;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        transition: all .3s;
+        z-index: 15px;
+
+        &__linea {
+            background: $colorSecundario;
+            width: 80%;
+            height: 4px;
+            border-radius: 15px;
+            margin: 2px 0;
+            transition: all .3s;
+        }
+    }
 }
 
 .home {
@@ -192,9 +288,9 @@ body {
 
         &__link {
             transition: all .4s;
-            color: $colorSecundario !important;
+            color: $colorSecundario;
             opacity: 0.5;
-            text-decoration: none !important;
+            text-decoration: none;
             transition: all .4s;
         }
 
@@ -204,14 +300,14 @@ body {
     }
 
     &__about {
-
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
         align-content: center;
         align-items: flex-end;
         width: 50%;
+        margin: 0 25%;
 
         &__logo {
             width: 40%;
@@ -256,6 +352,14 @@ body {
     width: 98.5vw;
     padding-top: 120px;
     box-sizing: border-box;
+    height: min-content;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
     &__titulo {
         text-align: center;
@@ -318,12 +422,18 @@ body {
     }
 }
 
-
 .portfolio {
     width: 98.5vw;
-    //height: 100vh;
+    height: min-content;
     padding-top: 120px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
     &__titulo {
         text-align: center;
@@ -346,7 +456,6 @@ body {
         align-items: center;
 
         width: 60%;
-        margin: 0 20%;
         margin-bottom: 70px;
         border-bottom: solid $colorPrincipal 2px;
         border-radius: 2px;
@@ -376,7 +485,6 @@ body {
         align-content: flex-start;
         align-items: center;
         width: 60%;
-        margin: 0 20%;
         margin-bottom: 70px;
         border-bottom: solid $colorPrincipal 2px;
         border-radius: 2px;
@@ -403,7 +511,6 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        margin: 0 25%;
         box-sizing: border-box;
         flex-wrap: wrap;
 
@@ -451,9 +558,16 @@ body {
 
 .contact {
     width: 98.5vw;
-    height: 100vh;
+    height: min-content;
     padding-top: 120px;
     box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 
     &__titulo {
         text-align: center;
@@ -468,11 +582,9 @@ body {
     }
 
     &__formulario {
-        width: 100%;
+        width: 50%;
 
         form {
-            width: 40%;
-            margin: 0 35%;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -484,7 +596,6 @@ body {
                 flex-direction: column;
                 color: $colorPrincipal;
                 font-weight: bold;
-                width: 25%;
                 margin: 10px;
                 width: 100%;
 
@@ -533,6 +644,7 @@ body {
         border-radius: 50px;
         transition: all .4s;
         margin: 0 30px;
+        background: $colorSecundario;
     }
 
     :hover {
@@ -546,6 +658,13 @@ body {
 
 //Extra Large XL
 @media only screen and (min-width: 1140px) {
+
+    .general {
+        &__hamburguesa {
+            display: none;
+        }
+    }
+
     .home {
         &__about {
 
@@ -582,10 +701,40 @@ body {
         }
     }
 
+    .contact {
+        &__formulario {
+            width: 20%;
+
+            form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+
+                label {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__footer {
+            h1 {
+                margin: 60px 0;
+            }
+        }
+    }
+
 }
 
 //Large LG
 @media only screen and (min-width: 992px) and (max-width:1139px) {
+
+    .general {
+        &__hamburguesa {
+            display: none;
+        }
+    }
 
     .home {
         &__about {
@@ -597,6 +746,8 @@ body {
             &__text {
                 font-size: 2.8em;
                 width: 70%;
+                text-align: center;
+                margin-top: 20px;
 
                 &__nombre,
                 &__apellido {
@@ -634,15 +785,18 @@ body {
 
     .contact {
         &__formulario {
-            width: 100%;
+            width: 50%;
 
             form {
-                width: 40%;
-                margin: 0 30%;
-
                 label {
                     width: 100%;
                 }
+            }
+        }
+
+        &__footer {
+            h1 {
+                margin: 60px 0;
             }
         }
     }
@@ -651,6 +805,12 @@ body {
 
 //Medium
 @media only screen and (min-width: 720px) and (max-width:991px) {
+
+    .general {
+        &__hamburguesa {
+            display: none;
+        }
+    }
 
     .home {
         &__menu {
@@ -718,12 +878,9 @@ body {
 
     .contact {
         &__formulario {
-            width: 100%;
+            width: 50%;
 
             form {
-                width: 60%;
-                margin: 0 20%;
-
                 label {
                     width: 100%;
                 }
@@ -740,7 +897,7 @@ body {
         button {
             padding: 10px 30px;
             margin: 0 20px;
-           
+
         }
     }
 }
@@ -759,6 +916,10 @@ body {
 
         &__navegacion {
             display: none;
+        }
+
+        &__hamburguesa {
+            display: flex;
         }
     }
 
@@ -835,6 +996,7 @@ body {
             justify-content: space-between;
             width: 66%;
             margin: 0 15%;
+
             &__proyecto {
                 width: 120px;
                 margin-bottom: 60px;
@@ -844,15 +1006,18 @@ body {
 
     .contact {
         &__formulario {
-            width: 100%;
+            width: 80%;
 
             form {
-                width: 80%;
-                margin: 0 10%;
-
                 label {
                     width: 100%;
                 }
+            }
+        }
+
+        &__footer {
+            h1 {
+                margin: 60px 0;
             }
         }
     }
@@ -866,7 +1031,7 @@ body {
         button {
             padding: 10px 30px;
             margin: 0 20px;
-           
+
         }
     }
 
@@ -888,6 +1053,11 @@ body {
         &__navegacion {
             display: none;
         }
+
+        &__hamburguesa {
+            display: flex;
+        }
+
     }
 
     .home {
@@ -963,7 +1133,8 @@ body {
             justify-content: center;
             width: 80%;
             margin: 0 10%;
-            &__proyecto{
+
+            &__proyecto {
                 width: 150px;
             }
         }
@@ -971,15 +1142,18 @@ body {
 
     .contact {
         &__formulario {
-            width: 100%;
+            width: 85%;
 
             form {
-                width: 90%;
-                margin: 0 5%;
-
                 label {
                     width: 100%;
                 }
+            }
+        }
+
+        &__footer {
+            h1 {
+                margin: 60px 0;
             }
         }
     }
@@ -993,9 +1167,7 @@ body {
         button {
             padding: 10px 50px;
             margin: 0 20px;
-           
+
         }
     }
-
-
 }
