@@ -191,9 +191,6 @@ body {
 }
 
 .general__menuRes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -310,6 +307,7 @@ body {
   -webkit-transition: all .3s;
   transition: all .3s;
   z-index: 15px;
+  cursor: pointer;
 }
 
 .general__hamburguesa__linea {
@@ -320,6 +318,10 @@ body {
   margin: 2px 0;
   -webkit-transition: all .3s;
   transition: all .3s;
+}
+
+.general__hamburguesa:hover {
+  cursor: pointer;
 }
 
 .home {
@@ -1101,31 +1103,32 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .exp {
+  .exp__experiencias {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: space;
+        -ms-flex-pack: space;
+            justify-content: space;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -ms-flex-line-pack: center;
         align-content: center;
   }
-  .exp__expUno, .exp__expDos {
+  .exp__experiencias__expUno, .exp__experiencias__expDos {
     border: none;
     padding: 0;
   }
-  .exp__expUno__trabajo, .exp__expDos__trabajo {
+  .exp__experiencias__expUno__trabajo, .exp__experiencias__expDos__trabajo {
     margin: 0;
+    margin-bottom: 35px;
   }
   .contact__formulario {
     width: 50%;
@@ -1146,6 +1149,36 @@ body {
   .contact__formulario__botones button {
     padding: 10px 30px;
     margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 965px) {
+  .exp__experiencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space;
+        -ms-flex-pack: space;
+            justify-content: space;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .exp__experiencias__expUno, .exp__experiencias__expDos {
+    border: none;
+    padding: 0;
+  }
+  .exp__experiencias__expUno__trabajo, .exp__experiencias__expDos__trabajo {
+    margin: 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -1238,6 +1271,33 @@ body {
   .portfolio__projects__proyecto {
     width: 120px;
     margin-bottom: 60px;
+  }
+  .exp__experiencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space;
+        -ms-flex-pack: space;
+            justify-content: space;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .exp__experiencias__expUno, .exp__experiencias__expDos {
+    border: none;
+    padding: 0;
+  }
+  .exp__experiencias__expUno__trabajo, .exp__experiencias__expDos__trabajo {
+    margin: 0;
+    margin-bottom: 35px;
   }
   .contact__formulario {
     width: 80%;
@@ -1353,6 +1413,33 @@ body {
   .portfolio__projects__proyecto {
     width: 150px;
   }
+  .exp__experiencias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space;
+        -ms-flex-pack: space;
+            justify-content: space;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .exp__experiencias__expUno, .exp__experiencias__expDos {
+    border: none;
+    padding: 0;
+  }
+  .exp__experiencias__expUno__trabajo, .exp__experiencias__expDos__trabajo {
+    margin: 0;
+    margin-bottom: 35px;
+  }
   .contact__formulario {
     width: 85%;
   }
@@ -1380,5 +1467,19 @@ body {
 
 .desaparecer {
   opacity: 0;
+}
+
+#hamburguesa:hover {
+  cursor: pointer;
+}
+
+.activar_menu {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0) !important;
+          transform: translateX(0) !important;
 }
 /*# sourceMappingURL=index.css.map */
