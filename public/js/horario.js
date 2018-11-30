@@ -6,15 +6,12 @@ var tiempo = hora + "." + minutos;
 
 var logo = document.getElementById("img_logo");
 var img = document.getElementsByClassName("home__about__logo__img");
-console.log(logo);
 
 
 if (tiempo >= 19.0 && tiempo < 23.59 || tiempo >= 0.0 && tiempo < 5.59) {
     document.write('<link rel="stylesheet" href="/css/noches.css">');
     logo.innerHTML= '<img src="image/Noche.svg" alt="" srset="">';
-    console.log("Es de noche");
 } else if (tiempo > 6.0 && tiempo < 18.59) {
-    console.log("Es de dia");
     document.write('<link rel="stylesheet" href="/css/index.css">');
 
 } else {

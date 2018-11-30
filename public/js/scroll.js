@@ -78,4 +78,3 @@ window.onscroll = function () {
     //console.log(posY);
 }
 
-console.log("Alto inicio" + portfolio.clientHeight);
