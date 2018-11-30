@@ -1,18 +1,48 @@
-var esp = document.getElementById("espanol");
-var ing = document.getElementById("ingles");
+//Botones
+var esp_btn = document.querySelectorAll("espanol");
+var ing_btn = document.querySelectorAll("ingles");
 
-esp.addEventListener('click', function () {
-    if (!esp.classList.contains("general__idioma__btn__active")) {
-        esp.classList.add("general__idioma__btn__active");
-        ing.classList.remove("general__idioma__btn__active");
-    }
-})
+//Contenido
+var esp_tx = document.getElementById("esp");
+var ing_tx = document.getElementById("ing");
 
-ing.addEventListener('click', function () {
-    if (!ing.classList.contains("general__idioma__btn__active")) {
-        esp.classList.remove("general__idioma__btn__active");
-        ing.classList.add("general__idioma__btn__active");
-    }
-})
+/*esp_btn[0].addEventListener('click', function () {
+    esp_btn[0].classList.add("general__idioma__btn__active");
+    ing_btn[0].classList.remove("general__idioma__btn__active");
 
-//console.log(esp);
+    esp_tx.classList.remove("desa");
+    ing_tx.classList.add("desa");
+
+});
+
+ing_btn[0].addEventListener('click', function () {
+    esp_btn[0].classList.remove("general__idioma__btn__active");
+    ing_btn[0].classList.add("general__idioma__btn__active");
+
+    ing_tx.classList.remove("desa");
+    esp_tx.classList.add("desa");
+    console.log("funciona")
+
+});
+
+//ingles
+esp_btn[1].addEventListener('click', function () {
+    esp_btn[1].classList.add("general__idioma__btn__active");
+    ing_btn[1].classList.remove("general__idioma__btn__active");
+
+    esp_tx.classList.remove("desa");
+    ing_tx.classList.add("desa");
+
+});
+
+ing_btn[1].addEventListener('click', function () {
+    esp_btn[1].classList.remove("general__idioma__btn__active");
+    ing_btn[1].classList.add("general__idioma__btn__active");
+
+    ing_tx.classList.remove("desa");
+    esp_tx.classList.add("desa");
+    console.log("funciona")
+
+});*/ 
+
+console.log("hola");

@@ -16,9 +16,9 @@ admin.initializeApp({
 const db = admin.database();
 var ref = db.ref("/portafolio-39a28");
 
-ref.once("value", function (snapshot) {
+/*ref.once("value", function (snapshot) {
     console.log(snapshot.val());
-});
+});*/
 
 app.engine('hbs', engines.handlebars);
 
@@ -35,4 +35,9 @@ app.listen(process.env.PORT || 5000);
 // Dirección del index
 app.get('/', (req, res) => {
     res.render('index');
+});
+
+// Dirección del index
+app.get('/a', (req, res) => {
+    res.render('idioma');
 });
