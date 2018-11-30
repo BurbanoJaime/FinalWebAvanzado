@@ -3,15 +3,16 @@
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
+  color: #EFEFEF;
 }
 
 html {
   width: 100%;
-  background: #EFEFEF;
+  background: #2e2e2e;
 }
 
 body {
-  background: #EFEFEF;
+  background: #2e2e2e;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -56,7 +57,7 @@ body in-transition {
 .general__redes a {
   text-decoration: none;
   padding: 10px 15px;
-  color: #353535;
+  color: #EFEFEF;
   font-weight: bold;
   border-radius: 50px;
   -webkit-transition: all .4s;
@@ -64,8 +65,8 @@ body in-transition {
 }
 
 .general__redes :hover {
-  background: #353535;
-  color: #EFEFEF;
+  background: #EFEFEF;
+  color: #2e2e2e;
 }
 
 .general__idioma {
@@ -79,9 +80,9 @@ body in-transition {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: solid 2px #353535;
+  border: solid 2px #EFEFEF;
   border-radius: 20px;
-  background: #EFEFEF;
+  background: #2e2e2e;
   position: fixed;
   right: 0;
   top: 20px;
@@ -97,8 +98,8 @@ body in-transition {
 }
 
 .general__idioma__btn__active {
-  background: #353535 !important;
-  color: #EFEFEF;
+  background: #EFEFEF !important;
+  color: #2e2e2e;
   border-radius: 20px;
   font-weight: bold;
 }
@@ -127,7 +128,7 @@ body in-transition {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #353535;
+  color: #EFEFEF;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -141,11 +142,11 @@ body in-transition {
 }
 
 .general__navegacion__link__punto {
-  background: #EFEFEF;
+  background: #2e2e2e;
   width: 10px;
   height: 10px;
   border-radius: 20px;
-  border: solid 2px #353535;
+  border: solid 2px #EFEFEF;
 }
 
 .general__navegacion__link__nombre {
@@ -162,13 +163,13 @@ body in-transition {
 }
 
 .general__navegacion .general__navegacion__link:hover {
-  background: #353535;
+  background: #EFEFEF;
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .general__navegacion .general__navegacion__link:hover .general__navegacion__link__punto {
-  background: #EFEFEF;
+  background: #2e2e2e;
   opacity: 1;
 }
 
@@ -176,18 +177,18 @@ body in-transition {
   opacity: 1;
   -webkit-transform: translateX(-10px);
           transform: translateX(-10px);
-  color: #EFEFEF;
+  color: #2e2e2e;
 }
 
 .general__navegacion__activo .general__navegacion__link {
-  background: #353535;
+  background: #EFEFEF;
   -webkit-transition: all .4s;
   transition: all .4s;
   opacity: 1;
 }
 
 .general__navegacion__activo .general__navegacion__link__punto {
-  background: #353535;
+  background: #EFEFEF;
   -webkit-transition: all .4s;
   transition: all .4s;
 }
@@ -228,7 +229,7 @@ body in-transition {
 }
 
 .general__menuRes__link {
-  color: #353535;
+  color: #EFEFEF;
   font-weight: bold;
   opacity: 1;
   text-decoration: none;
@@ -243,8 +244,8 @@ body in-transition {
 }
 
 .general__menuRes__link:hover {
-  background: #353535;
-  color: #EFEFEF;
+  background: #EFEFEF;
+  color: #2e2e2e;
 }
 
 .general__menuRes__logo {
@@ -271,14 +272,14 @@ body in-transition {
 
 .general__menuRes__logo img {
   width: 30%;
-  fill: #EFEFEF;
-  background-color: #EFEFEF;
+  fill: #2e2e2e;
+  background-color: #2e2e2e;
   margin-bottom: 15px;
 }
 
 .general__menuRes__logo h1 {
   font-size: 1em;
-  color: #353535;
+  color: #EFEFEF;
 }
 
 .general__hamburguesa {
@@ -304,8 +305,8 @@ body in-transition {
       align-content: space-between;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: #353535;
-  border: solid 1px #353535;
+  background: #EFEFEF;
+  border: solid 1px #EFEFEF;
   width: 40px;
   height: 40px;
   border-radius: 5px;
@@ -315,7 +316,7 @@ body in-transition {
 }
 
 .general__hamburguesa__linea {
-  background: #EFEFEF;
+  background: #2e2e2e;
   width: 80%;
   height: 4px;
   border-radius: 15px;
@@ -349,7 +350,7 @@ body in-transition {
 }
 
 .home__menu {
-  background: #353535;
+  background: #EFEFEF;
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -369,8 +370,8 @@ body in-transition {
 .home__menu__link {
   -webkit-transition: all .4s;
   transition: all .4s;
-  color: #EFEFEF;
-  opacity: 0.5;
+  color: #2e2e2e;
+  opacity: 1;
   text-decoration: none;
   transition: all .4s;
 }
@@ -514,7 +515,7 @@ body in-transition {
 .skills__skills__skill__imagen {
   width: 95px;
   height: 95px;
-  background: #353535;
+  background: #EFEFEF;
   border-radius: 100px;
   opacity: .5;
   -webkit-transition: all .4s;
@@ -597,13 +598,13 @@ body in-transition {
           align-items: center;
   width: 60%;
   margin-bottom: 70px;
-  border-bottom: solid #353535 2px;
+  border-bottom: solid #EFEFEF 2px;
   border-radius: 2px;
   padding-bottom: 17px;
 }
 
 .portfolio__menu__link {
-  color: #353535;
+  color: #EFEFEF;
   font-weight: normal;
   text-decoration: none;
   text-align: center;
@@ -611,10 +612,10 @@ body in-transition {
 }
 
 .portfolio__menu__link__activo {
-  background: #353535;
+  background: #EFEFEF;
   border-radius: 50px;
   font-weight: bold;
-  color: #EFEFEF;
+  color: #2e2e2e;
 }
 
 .portfolio__menuDos {
@@ -637,14 +638,14 @@ body in-transition {
           align-items: center;
   width: 60%;
   margin-bottom: 70px;
-  border-bottom: solid #353535 2px;
+  border-bottom: solid #EFEFEF 2px;
   border-radius: 2px;
   padding-bottom: 17px;
 }
 
 .portfolio__menuDos select {
   width: 100%;
-  border: solid 1px #353535;
+  border: solid 1px #EFEFEF;
   border-radius: 50px;
   padding: 10px;
   text-align: center;
@@ -652,7 +653,7 @@ body in-transition {
 }
 
 .portfolio__menuDos select option {
-  color: #353535;
+  color: #EFEFEF;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -686,14 +687,14 @@ body in-transition {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 100px;
-  color: #353535;
+  color: #EFEFEF;
   text-decoration: none;
 }
 
 .portfolio__projects__proyecto__imagen {
   width: 95px;
   height: 95px;
-  background: #353535;
+  background: #EFEFEF;
   border-radius: 100px;
   opacity: .5;
   -webkit-transition: all .4s;
@@ -864,7 +865,7 @@ body in-transition {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #353535;
+  color: #EFEFEF;
   font-weight: bold;
   margin: 10px;
   width: 100%;
@@ -873,7 +874,7 @@ body in-transition {
 .contact__formulario form label input {
   margin: 8px 0;
   border: none;
-  background: #d3d3d3;
+  background: #444444;
   padding: 5px;
   height: 20px;
 }
@@ -881,14 +882,14 @@ body in-transition {
 .contact__formulario form label textarea {
   margin: 8px 0;
   border: none;
-  background: #d3d3d3;
+  background: #444444;
   padding: 5px;
   height: 100px;
 }
 
 .contact__footer h1 {
   font-weight: bold;
-  color: #353535;
+  color: #EFEFEF;
   font-size: .8em;
   text-align: center;
   margin-top: 150px;
@@ -907,19 +908,19 @@ body in-transition {
 
 .contact__formulario__botones button {
   padding: 10px 50px;
-  border: solid 1px #353535;
-  color: #353535;
+  border: solid 1px #EFEFEF;
+  color: #EFEFEF;
   font-weight: bold;
   border-radius: 50px;
   -webkit-transition: all .4s;
   transition: all .4s;
   margin: 0 30px;
-  background: #EFEFEF;
+  background: #2e2e2e;
 }
 
 .contact__formulario__botones :hover {
-  background: #353535;
-  color: #EFEFEF;
+  background: #EFEFEF;
+  color: #2e2e2e;
 }
 
 /* Responsive Home*/
@@ -1344,4 +1345,4 @@ body in-transition {
 .desaparecer {
   opacity: 0;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=noches.css.map */

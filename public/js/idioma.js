@@ -15,4 +15,4 @@ ing.addEventListener('click', function () {
     }
 })
 
-console.log(esp);
+//console.log(esp);

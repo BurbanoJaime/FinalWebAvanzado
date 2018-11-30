@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
 
 
-$colorPrincipal:#353535;
-$colorSecundario:#EFEFEF;
+$colorPrincipal:#EFEFEF;
+$colorSecundario:#2e2e2e;
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Ubuntu', sans-serif;
-
+color: $colorPrincipal;
 }
 
 html {
@@ -295,7 +295,7 @@ body {
         &__link {
             transition: all .4s;
             color: $colorSecundario;
-            opacity: 0.5;
+            opacity: 1;
             text-decoration: none;
             transition: all .4s;
         }
@@ -665,7 +665,7 @@ body {
                 input {
                     margin: 8px 0;
                     border: none;
-                    background: #d3d3d3;
+                    background: #444444;
                     padding: 5px;
                     height: 20px;
                 }
@@ -673,7 +673,7 @@ body {
                 textarea {
                     margin: 8px 0;
                     border: none;
-                    background: #d3d3d3;
+                    background: #444444;
                     padding: 5px;
                     height: 100px;
                 }
